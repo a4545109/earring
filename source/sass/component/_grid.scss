@@ -1,0 +1,16 @@
+@mixin pad-Pro {
+    @media screen and (max-width:992px) {
+        @content
+    }
+}
+
+@mixin pad {
+    @media screen and (max-width:767px) {
+        @content
+    }
+}
+@mixin mobile576 {
+    @media screen and (max-width:576px) {
+        @content
+    }
+}

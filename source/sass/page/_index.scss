@@ -1,0 +1,165 @@
+@import '../component/grid';
+@import '../helpers/variables';
+@import '../component/utilities';
+
+.hero-img{
+    height: 496px;
+}
+
+.hot{
+    .hot-border{
+        margin: 0 1px;
+        @include pad-Pro(){
+            margin: 0 0px;
+        }
+    }
+    margin-top: -90px;
+    @include pad(){
+        margin-top: 0px;
+    }
+    .hot-img{
+        height: 256px;
+    }
+    .hot-wrap{
+        height: 256px;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+        overflow: hidden;
+        .hot-yellow{
+            &::after{
+                content: "";
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                bottom: -5px;
+                left: -5px;
+                background-color: #FFE180;
+                opacity: 0.5;
+                transition: background-color .5s;
+                z-index: 2;
+            }
+        }
+        .hot-item{
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+            color: $white;
+            transition: filter .5s;
+            &:hover{
+                color: $primary;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                bottom: -5px;
+                left: -5px;
+                background-color: rgba(198, 87, 40, 0.5);
+                transition: background-color .5s;
+                z-index: 2;
+            }
+            &.active::after,
+            &:hover::after,
+            &:focus::after {
+                background-color: rgba(255, 225, 128, 0.8);
+                color: #000;
+            }   
+            &.active .hot-blur,
+            &:hover .hot-blur,
+            &:focus .hot-blur{
+                filter: blur(0);
+            }
+        }
+
+        .hot-blur{     
+            filter: blur(5px);
+        }
+    }
+    
+}
+
+.hot-font{
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    font-size: 24px;
+    writing-mode: vertical-rl;
+    z-index: 3;
+}
+
+
+.sectionMake{
+    .sectionMake-title{
+        width: 196px;
+        height: 60px;
+     }
+     .sectionMake-img{
+        height: 460px;
+    }
+    .sectionMake-content-title{
+        width: 88px;
+        height: 304px;
+        @include pad(){
+            display: none;
+        }
+    }
+}
+
+.section-text{
+    writing-mode: vertical-rl;
+    line-height:30px; 
+    @include pad-Pro(){
+        line-height: 25px;
+    }
+    @include pad(){
+        writing-mode: horizontal-tb;
+    }
+}
+.sectionEat{
+    .sectionEat-title{
+        width: 196px;
+        height: 60px;
+
+     }
+     .sectionEat-img-up,
+     .sectionEat-img-bottom{
+         height: 460px;
+     }
+     .sectionEat-content-title{
+        width: 88px;
+        height: 304px;
+        @include pad(){
+           display: none;
+       }
+    }
+     .sectionEat-img{
+        @include pad(){
+            display: none;
+        }
+     }
+}
+.sectionWant{
+    .section-title-img3{
+        width: 89px;
+        height: 327px;
+        @include pad(){
+            display: none;
+        }
+    }
+}
+.card-footer{
+    background-color: $primaryLight;
+}
+.subscribeText{
+    font-size: 24px;
+}
+
+
+
+

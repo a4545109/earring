@@ -1,0 +1,44 @@
+.c-order-title{
+    font-size: 24px;
+}
+.c-orderSummary{
+    font-size: 24px;
+    @include pad(){
+        background-color: $light;
+        margin: 20px 100px 0px 100px;
+    }
+}
+.tableimg{
+    max-width: 100%;
+    height: auto;
+}
+.total{
+    font-size: 20px;
+}
+.cart-img{
+    width: 95%;
+    min-height: 106px;
+    @include pad{
+        min-width: 157px;
+        min-height: 106px;
+    }
+}
+.productName{
+    color: $primary;
+    font-size: 20px;
+}
+.productPrice{
+    color: $primary;
+    font-size: 16px;
+}
+.productTitle{
+    font-size: 20px;
+}
+.orderSummary{
+    background-color: $primary;
+    color: $white;
+    @include pad(){
+        background: $white;
+        color: $primary;
+    }
+}

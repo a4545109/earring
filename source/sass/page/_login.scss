@@ -1,0 +1,22 @@
+@import '../component/grid';
+@import '../helpers/variables';
+
+.l-card-title{
+    font-size: 36px;
+}
+.l-addcart{
+    font-size: 24px;
+}
+.form-control{
+    padding: 0px 0px;
+}
+.userLink{
+    font-size: 24px;
+}
+.userLink-img{
+    width: 108px;
+    height: 56px;
+    @include mobile576(){
+        width: 70px;
+    }
+}

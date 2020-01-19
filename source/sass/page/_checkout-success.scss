@@ -1,0 +1,43 @@
+ .header-image{
+        width: 100%;
+        height: 460px;
+}
+.success-blur{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-top: 50px;
+}
+.setp{
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    &-item{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        &.active:after{
+            display: block;
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+        &.completed{
+            padding-top: 3px;
+            font-size: 0.8rem;
+        }
+    }
+    &::before{
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        content: "";
+        background-color: $primary;
+    }
+}

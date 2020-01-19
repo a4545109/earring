@@ -1,0 +1,30 @@
+@import '../component/grid';
+@import '../helpers/variables';
+@import '../component/utilities';
+
+.checkout-img{
+    // &-1{
+    //     background-image: url(https://bit.ly/2QvsT63);
+    // }
+    // &-2{
+    //     background-image: url(https://bit.ly/2zBDAxX);
+    // }
+    // &-3{
+    //     background-image: url(https://bit.ly/2zKOP7w);
+    // }
+    width: 100%;
+    min-height: 80px;
+}
+.c-productName{
+    font-size: 16px;
+}
+.c-productPrice{
+    font-size: 20px;
+}
+.checkout-form{
+    color: $light;
+    font-size: 20px;
+}
+.c-pill{
+    border: 2px solid #fff;
+}

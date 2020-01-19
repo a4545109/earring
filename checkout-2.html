@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="source/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link rel="icon" href="source/img/favicon-icon.ico" type="image/x-icon" />
+    <title>Earring</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand d-lg-block d-none" href="index.html">
+                <img src="source/img/logo.svg" style="width: 215px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-lg-none d-block" href="index.html">
+                <img src="source/img/smallLogo.svg" style="height: 30px;" alt="">
+            </a>
+
+            <a class="nav-link d-flex align-items-center order-lg-1" href="cart.html">
+                <i class="fas fa-shopping-cart"></i></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">甜點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fulid">
+        <div class="row d-flex justify-content-center no-gutters">
+            <div class="col-md-6">
+                <div class="card bg-primary text-white ml-md-4 border-0 rounded-0">
+
+                    <div class="l-card-title mt-5 px-7">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-6">
+                                <div class="popular mb-md-0">付款</div>
+                            </div>
+                            <div class="col-6">
+                                <ul class="setp d-flex justify-content-between">
+                                    <li class="setp-item completed bg-white text-white"><i class="fas fa-check text-primary"></i>                            </li>
+                                    <li class="setp-item active"></li>
+                                    <li class="setp-item"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body px-7">
+                        <form class="checkout-form font-weight-bold">
+                            <div class="form-group">
+                                <label for="cardNumber">信用卡卡號</label>
+                                <input type="text" class="form-control mt-2 px-4 py-6 bg-primaryLight border-0 rounded-0"
+                                    id="cardNumber" placeholder="9012-3456-7890-1234">
+                            </div>
+                            <label for="cardName">持卡人姓名</label>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <input type="text"
+                                        class="form-control mt-2 px-4 py-6 bg-primaryLight border-0 rounded-0"
+                                        id="cardName" placeholder="王">
+                                </div>
+                                <div class="form-group col-6">
+                                    <input type="text"
+                                        class="form-control mt-2 px-4 py-6 bg-primaryLight border-0 rounded-0"
+                                        id="cardName-last" placeholder="小明">
+                                </div>
+                            </div>
+
+                            <label for="date">有效期限</label>
+                            <div class="form-row mt-2">
+                                <div class="form-group col-6">
+                                    <select id="month" class="form-control bg-primaryLight border-0 rounded-0">
+                                        <option selected>月</option>
+                                        <option>12月</option>
+                                        <option>11月</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <select id="year" class="form-control bg-primaryLight border-0 rounded-0">
+                                        <option selected>年</option>
+                                        <option>2019</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label for="backNumber">背面末三碼</label>
+                            <div class="form-row mt-2">
+                                <div class="form-group col-6">
+                                    <input type="text" class="form-control px-4 py-6 bg-primaryLight border-0 rounded-0"
+                                        id="backNumber" placeholder="123">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="checkout-3.html" class="btn btn-accent text-primary btn-block rounded-0"><span
+                            class="h4 mb-0">下一步</span></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 d-md-block d-none">
+                <div class="card bg-white text-medium font-weight-bold text-center ml-md-4 border-0 rounded-0">
+                    <div class="c-order-title bg-primaryLight">
+                        <div class="popular my-4">訂單摘要</div>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-borderless text-medium table-sm border-primaryLight">
+                            <tr>
+                                <td class="text-left">小計</td>
+                                <td class="text-right">NT$ 2,700</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">運費</td>
+                                <td class="text-right">NT$ 300</td>
+                            </tr>
+                            <tr class="font-weight-bold total">
+                                <td class="text-left">總計</td>
+                                <td class="text-right">NT$ 3,000</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="card bg-white text-medium font-weight-bold ml-md-4 border-0 rounded-0">
+                    <div class="c-order-title bg-primaryLight">
+                        <div class="popular my-4 text-center">購物清單</div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 pl-5">
+                            <div class="checkout-img rounded-0 mt-3 bg-cover" style="background-image:url('source/img/earring04.jpg')"></div>
+                        </div>
+                        <div class="col-md-6 text-medium">
+                            <p class="c-productName mt-3">螺旋耳環</p>
+                            <p class="c-productPrice font-weight-bold mt-2">NT$ 290</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 pl-5">
+                            <div class="checkout-img rounded-0 mt-3 bg-cover" style="background-image:url('source/img/earring06.jpg')"></div>
+                        </div>
+                        <div class="col-md-6 text-medium">
+                            <p class="c-productName mt-3">神之眼耳環</p>
+                            <p class="c-productPrice font-weight-bold mt-2">NT$ 290</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 pl-5">
+                            <div class="checkout-img rounded-0 mt-3 bg-cover" style="background-image:url('source/img/earring05.jpg')"></div>
+                        </div>
+                        <div class="col-md-6 text-medium">
+                            <p class="c-productName mt-3">紫水晶耳環</p>
+                            <p class="c-productPrice font-weight-bold mt-2">NT$ 290</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="subscribeMail bg-primary mt-md-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="subscribeText d-flex align-items-center justify-content-center my-md-7 mt-5">
+                        <img src="source/img/logoHeader.svg" class="mr-4" style="width: 40px;" alt="">
+                        <span class="text-white">訂閱你我的甜蜜郵件</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group my-md-6 my-5 px-5">
+                        <div class="input-group-prepend">
+                            <label for="subscription" class="input-group-text text-primary bg-white border-0 rounded-0"><i
+                                    class="fas fa-envelope"></i></label>
+                        </div>
+                        <input type="email" id="subscription" class="form-control border-0" aria-label="Amount (to the nearest dollar)">
+                        <div class="input-group-append">
+                            <button class="btn btn-accent rounded-0"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-primaryLight pl-md-14 pl-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <img src="source/img/footerLogo.svg" class="mt-md-6 mt-6" style="width: 172px;" alt="">
+                    <ul class="message mt-md-14 mt-6">
+                        <li>07-1234-5678</li>
+                        <li>sweetaste@email.com</li>
+                        <li>800 高雄市新興區幸福路 520 號</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <img src="source/img/好日子.svg" class="mt-6 goodday-img" style="width: 60px;" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="fans mt-md-4 mt-6">
+                        <span><i class="fab fa-facebook-square fa-2x text-primary" style="width: 35px;" alt=""></i></span>
+                        <span><i class="fab fa-instagram fa-2x text-primary" style="width: 35px;" alt=""></i></span>
+                    </div>
+                </div>
+                <div class="col-md-5 my-md-5 my-4">
+                    <p>© 2018 Sweetaste* All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

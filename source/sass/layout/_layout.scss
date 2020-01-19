@@ -1,0 +1,21 @@
+@import '../component/grid';
+@import '../helpers/variables';
+
+body{
+    color: $medium;
+    @include pad(){
+        .protrud{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        }
+    }
+}
+
+.footer{
+    color: $primary;
+    .goodday-img{
+        @include pad(){
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import '../component/grid';
+@import '../helpers/variables';
+
+.hero{
+    position: relative;
+    .p-hero-img{
+        height: 496px;
+    }
+    .p-hero-title-img{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+}
+.p-list{
+    font-size: 24px;
+}
+
+.menu{
+    color: $primary;
+    .p-card-img{
+        height: 300px;
+    }
+    .card-footer{
+        background-color: $light;
+    }
+    .priceList{
+        border: 1px solid #EAF0ED;
+    }
+}
