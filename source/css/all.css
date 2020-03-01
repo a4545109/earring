@@ -15835,6 +15835,7 @@ body {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
+  max-height: 420px;
   line-height: 30px;
 }
 
