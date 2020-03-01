@@ -113,6 +113,7 @@
 
 .section-text{
     writing-mode: vertical-rl;
+    max-height: 420px;
     line-height:30px; 
     @include pad-Pro(){
         line-height: 25px;
